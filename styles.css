@@ -1,0 +1,69 @@
+body {
+    font-family: Lora, sans-serif;
+    font-size: 20px;
+    margin: 10;
+    padding: 0; 
+    color: rgb(14, 0, 0);
+}
+
+
+
+
+a {
+  color: #fbff00;
+}
+
+a:visited {
+  color: #fbff00; /* same as above */
+}
+
+
+h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2 a:visited {
+  color: inherit;
+}
+
+h2 a:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+body {
+    background-image: url('space.gif');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+body {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.spinning-gif {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  z-index: 100;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinning-gif img {
+  width: 100%;
+  height: 100%;
+}
